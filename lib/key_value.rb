@@ -16,4 +16,8 @@ class KeyValue
     @store.delete(key)
   end
 
+  def get_keys
+    @store.keys.join(", ")
+  end
+
 end

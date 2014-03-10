@@ -32,6 +32,18 @@ describe KeyValue do
     expect(actual).to eq expected
 
   end
+  it "allows a user to get all keys" do
+    key_values = KeyValue.new
+    key_values.add_info("dessert", "apple pie")
+    key_values.add_info("favorite number", 5)
+    key_values.add_info(123, "Sesame Street")
+
+    expected = "dessert, favorite number, 123"
+    actual = key_values.get_keys
+
+    expect(actual).to eq expected
+
+  end
 
 
 
