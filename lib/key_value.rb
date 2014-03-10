@@ -20,4 +20,8 @@ class KeyValue
     @store.keys.join(", ")
   end
 
+  def clear_info
+    @store.clear
+  end
+
 end
