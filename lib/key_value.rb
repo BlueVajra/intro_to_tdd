@@ -12,4 +12,8 @@ class KeyValue
     @store[key]
   end
 
+  def delete_info(key)
+    @store.delete(key)
+  end
+
 end
