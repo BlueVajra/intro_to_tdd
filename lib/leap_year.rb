@@ -14,8 +14,6 @@ class LeapYear
       else
         false
       end
-
   end
-
 
 end
