@@ -18,4 +18,12 @@ describe StringCalc do
     expected = 0
     expect(actual).to eq expected
   end
+  it "allows a delimiter to be defined at initialization" do
+
+    stringcalc = StringCalc.new("-")
+
+    actual = stringcalc.add('1-3-7')
+    expected = 11
+    expect(actual).to eq expected
+  end
 end
