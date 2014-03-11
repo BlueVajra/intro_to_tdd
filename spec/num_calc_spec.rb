@@ -15,6 +15,14 @@ describe NumCalc do
     actual = numcalc.subtract(10,6)
     expected = 4
     expect(actual).to eq expected
+  end
+  it "saves and gets numbers" do
+    numcalc = NumCalc.new
+    numcalc.save(123)
+
+    actual = numcalc.get
+    expected = 123
+    expect(actual).to eq expected
 
   end
 end
