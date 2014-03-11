@@ -35,4 +35,12 @@ describe NumCalc do
     expect(actual).to eq expected
 
   end
+  it "initializes zero in memory" do
+    numcalc = NumCalc.new
+
+    actual = numcalc.get
+    expected = 0
+    expect(actual).to eq expected
+
+  end
 end
