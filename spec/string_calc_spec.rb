@@ -10,4 +10,12 @@ describe StringCalc do
     expect(actual).to eq expected
 
   end
+  it "returns 0 if no string is passed" do
+
+    stringcalc = StringCalc.new
+
+    actual = stringcalc.add('')
+    expected = 0
+    expect(actual).to eq expected
+  end
 end
