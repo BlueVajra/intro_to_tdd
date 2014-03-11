@@ -11,4 +11,7 @@ class NumCalc
   def get
     @save
   end
+  def clear
+    @save = 0
+  end
 end

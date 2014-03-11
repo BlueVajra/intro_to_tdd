@@ -25,4 +25,14 @@ describe NumCalc do
     expect(actual).to eq expected
 
   end
+  it "clears memory" do
+    numcalc = NumCalc.new
+    numcalc.save(123)
+    numcalc.clear
+
+    actual = numcalc.get
+    expected = 0
+    expect(actual).to eq expected
+
+  end
 end
