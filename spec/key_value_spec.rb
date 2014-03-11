@@ -54,12 +54,5 @@ describe KeyValue do
     actual = key_values.clear_info
 
     expect(actual).to eq expected
-
-
   end
-
-
-
-
-
 end
